@@ -1,0 +1,28 @@
+
+p{
+    text-align: center;
+    color: black;
+    background-color: orangered;
+}
+h3{
+    text-align: center;
+    color: aqua;
+    background-color: rgb(3, 38, 3);
+}
+h1{
+    text-align: center;
+    color: chartreuse;
+    background-color: black;
+    padding: 10px;
+}
+h2{
+    text-align: center;
+    color: purple;
+    background-color: darkcyan;
+    padding: 10px;
+
+}
+.mul{
+    text-align: center;
+
+}

@@ -1,0 +1,24 @@
+[{
+    "id":1,
+    "name":"Dora",
+    "email":"dora@gmail.com",
+    "password":"Dorabujji",
+    "mobileno":"7878786565"
+},
+{
+    "id":2,
+    "name":"rishi",
+    "email":"rishi@gmail.com",
+    "password":"rishi1432",
+    "mobileno":"78787864675"
+},
+
+{
+    "id":2,
+    "name":"rishi",
+    "email":"rishi@gmail.com",
+    "password":"rishi1432",
+    "mobileno":"78787864675"
+}   
+
+]

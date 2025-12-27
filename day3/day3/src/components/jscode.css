@@ -1,0 +1,16 @@
+
+.header1{
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+    padding:10px;
+    margin: 20px;
+}
+
+.para1{
+    text-align: center;
+    background-color: chocolate;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}

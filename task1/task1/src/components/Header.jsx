@@ -1,0 +1,11 @@
+
+import "./code.css"
+function Header() {
+  return (
+    <header>
+      <h1>this is the header</h1>
+    </header>
+  );
+}
+
+export default Header;
