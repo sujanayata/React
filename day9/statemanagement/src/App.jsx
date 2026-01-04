@@ -1,4 +1,6 @@
-import { Statemanagement } from "./component/statemanagement"
+// import { Statemanagement } from "./component/statemanagement"
+
+import { EventBinding2 } from "./component/EventBinding2"
 
 
 function App() {
@@ -6,7 +8,8 @@ function App() {
 
   return (
     <>
-      <Statemanagement></Statemanagement>
+      {/* <Statemanagement></Statemanagement> */}
+      <EventBinding2></EventBinding2>
     </>
   )
 }
