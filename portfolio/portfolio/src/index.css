@@ -1,0 +1,231 @@
+/* ================== RESET ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ================== BODY ================== */
+body {
+  background: #0b0f1a;
+  color: white;
+}
+
+/* ================== NAVBAR ================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 40px;
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #00e6e6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ================== HOME ================== */
+.home {
+  min-height: 100vh;
+  padding: 120px 60px;
+  display: flex;
+  align-items: center;
+}
+
+.home span {
+  color: #00e6e6;
+}
+
+/* Layout */
+.home-content {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+}
+
+/* ================== PROFILE IMAGE GLOW ================== */
+.puppy-glow {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  padding: 6px;
+  background: linear-gradient(45deg, #00e6e6, #0077ff);
+  animation: glow 3s infinite alternate;
+  flex-shrink: 0;
+}
+
+.puppy-glow img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #000;
+}
+
+/* Glow Animation */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 15px #00e6e6;
+  }
+  to {
+    box-shadow: 0 0 40px #0077ff;
+  }
+}
+
+/* ================== TAGS ================== */
+.tags {
+  margin-top: 15px;
+}
+
+.tags span {
+  border: 1px solid #00e6e6;
+  padding: 6px 14px;
+  margin: 6px 6px 0 0;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+/* ================== SECTIONS ================== */
+.section {
+  padding: 100px 60px;
+}
+
+.skills span {
+  background: #00e6e6;
+  color: #000;
+  padding: 8px 14px;
+  border-radius: 20px;
+  margin: 6px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.project-card {
+  background: #111827;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+}
+
+/* ================== BUTTON ================== */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: #00e6e6;
+  padding: 10px 22px;
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* ================== SCROLL ANIMATION ================== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================== CONTACT ================== */
+.contact-icons {
+  margin-top: 20px;
+}
+
+.contact-icons p {
+  margin: 10px 0;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 32px;
+  margin-right: 20px;
+  color: #00e6e6;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* ================== MOBILE RESPONSIVE ================== */
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .home,
+  .section {
+    padding: 80px 20px;
+  }
+
+  .puppy-glow {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.about-list {
+  margin: 15px 0 25px;
+  padding-left: 20px;
+}
+
+.about-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.section h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #00e6e6;
+}
+/* Resume Button */
+.resume-btn {
+  margin-top: 25px;
+}
+
+.resume-btn .btn {
+  display: inline-block;
+  background: linear-gradient(45deg, #00e6e6, #0077ff);
+  color: #000;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-btn .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px #00e6e6;
+}
