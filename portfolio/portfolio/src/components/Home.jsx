@@ -1,4 +1,4 @@
-import profile from "/puppy.jpg";
+import profile from "/suppu1.jpeg";
 
 const Home = () => {
   return (
