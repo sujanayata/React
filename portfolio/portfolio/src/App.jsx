@@ -6,6 +6,9 @@ import Projects from "./components/Projects";
 import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import Certificates from "./components/certificates";
+import Marquee from "./components/Marque";
+import Footer from "./components/Footer";
+
 
 function App() {
   return (
@@ -18,6 +21,10 @@ function App() {
       <Resume />
       <Contact />
       <Certificates></Certificates>
+    
+      <Marquee></Marquee>
+      <Footer></Footer>
+      
     </>
   );
 }

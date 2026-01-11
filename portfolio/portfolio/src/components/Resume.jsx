@@ -3,21 +3,29 @@ const Resume = () => {
     <section id="resume" className="section fade-in">
       <h2>Resume</h2>
 
+      {/* Resume Viewer */}
+      <div className="resume-viewer">
+        <iframe
+          src="/sujanayataresume.pdf#toolbar=0"
+          title="Resume Viewer"
+        ></iframe>
+      </div>
+
+      {/* Actions */}
       <div className="resume-btn">
         <a
-          href="https://docs.google.com/gview?url=http://localhost:5173/sujana%20yata%20resume.docx&embedded=true"
+          href="/sujanayataresume.pdf"
           target="_blank"
           rel="noreferrer"
           className="btn"
         >
-          👁 View Resume
+          👁 View Fullscreen
         </a>
 
         <a
-          href="/sujana yata resume.docx"
+          href="/sujanayataresume.pdf"
           download
           className="btn"
-          style={{ marginLeft: "15px" }}
         >
           📄 Download Resume
         </a>
