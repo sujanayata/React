@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Certificates from "./components/certificates";
 import Marquee from "./components/Marque";
 import Footer from "./components/Footer";
+import Stars from "./components/Stars";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
     
       <Marquee></Marquee>
       <Footer></Footer>
+      <Stars></Stars>
       
     </>
   );

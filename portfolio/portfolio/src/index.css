@@ -272,37 +272,88 @@ body {
   font-size: 14px;
 }
 
+.section {
+  padding: 60px 20px;
+  background-color: #0f172a;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
 .project-card {
-  background: #111827;
+  background: #020617;
+  border-radius: 14px;
   padding: 20px;
-  margin: 20px 0;
-  border-radius: 12px;
+  color: #e5e7eb;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ================== BUTTON ================== */
-.btn {
-  display: inline-block;
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(59, 130, 246, 0.35);
+}
+
+.project-card h3 {
   margin-top: 15px;
-  background: #00e6e6;
-  padding: 10px 22px;
-  color: #000;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 500;
+  margin-bottom: 12px;
+  color: #38bdf8;
 }
 
-/* ================== SCROLL ANIMATION ================== */
-.fade-in {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeUp 1s ease forwards;
+.project-card ul {
+  padding-left: 18px;
 }
 
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.project-card li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Image styling */
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* .project-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 15px;
+} */
+
+.project-images img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.project-images img:hover {
+  transform: scale(1.05);
 }
 
 /* ================== CONTACT ================== */
@@ -978,3 +1029,62 @@ a{
     justify-content: center;
   }
 }
+
+
+/* ================= STAR BACKGROUND ================= */
+
+.stars {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background: black;
+  overflow: hidden;
+}
+
+/* Base stars */
+.stars::before,
+.stars::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 10% 20%, #fff, transparent),
+    radial-gradient(1px 1px at 30% 80%, #fff, transparent),
+    radial-gradient(1px 1px at 50% 40%, #fff, transparent),
+    radial-gradient(1px 1px at 70% 60%, #fff, transparent),
+    radial-gradient(1px 1px at 90% 10%, #fff, transparent),
+    radial-gradient(1px 1px at 20% 50%, #fff, transparent),
+    radial-gradient(1px 1px at 80% 90%, #fff, transparent);
+  background-size: 300px 300px;
+  animation: starsMove 120s linear infinite;
+}
+
+/* Second layer (slower + dim) */
+.stars::after {
+  opacity: 0.4;
+  background-size: 500px 500px;
+  animation-duration: 200s;
+}
+
+/* Movement */
+@keyframes starsMove {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-1000px);
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+.stars::before {
+  animation:
+    starsMove 120s linear infinite,
+    twinkle 4s ease-in-out infinite;
+}
+
+
