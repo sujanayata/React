@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import profile from "/suppu1.jpeg";
+import profile from "/suppu2.jpeg";
 
 const roles = [
   "Python Full Stack Developer",
